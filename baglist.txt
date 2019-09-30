@@ -1,0 +1,9 @@
+path/to/rosbag/01.bag
+path/to/rosbag/02.bag
+path/to/rosbag/03.bag
+path/to/rosbag/04.bag
+path/to/rosbag/05.bag
+path/to/rosbag/06.bag
+path/to/rosbag/07.bag
+path/to/rosbag/08.bag
+path/to/rosbag/09.bag

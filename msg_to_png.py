@@ -40,6 +40,7 @@ def main(argv):
         return
     for i in range(len(bags)):
         bag = rosbag.Bag(bags[i])
+        print("Extracting {}".format(bags[i]))
         for topic, msg, t in bag.read_messages(topics=argv[2] if len(argv) > 2 else "/mynteye/right/image_color"):
             image_msgs_cb(msg)
             msgs_count += 1
@@ -47,4 +48,5 @@ def main(argv):
 
 
 if __name__ == "__main__":
+    print("Usage: python msg_to_png.py baglist.txt [image topic]")
     main(sys.argv)
